@@ -1,15 +1,15 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        // System.out.println("Hello, World!");
 
         // VARIABLES
-        int num = 10;
-        double pi = 3.14;
-        boolean isTrue = true;
-        char letter = 'a';
-        String chain = "Hello, World!";
+        // int num = 10;
+        // double pi = 3.14;
+        // boolean isTrue = true;
+        // char letter = 'a';
+        // String chain = "Hello, World!";
 
         // CONDICIONALES
         // if(num > 5){
@@ -68,11 +68,49 @@ public class App {
         // numbers[3] = 40;
         // numbers[4] = 50;
 
-        int [] numbers = {10, 20, 30, 40, 50};
+        // int [] numbers = {10, 20, 30, 40, 50};
 
-        for(int i=0; i<numbers.length; i++){
-            System.out.println(numbers[i]);
-        }
+        // for(int i=0; i<numbers.length; i++){
+        //     System.out.println(numbers[i]);
+        // }
 
+        // CLASES
+        // Persona persona1 = new Persona();
+        // persona1.name = "Mono";
+        // persona1.surname = "Toledo";
+        // persona1.age = 26;
+
+        // Carrera carrera1 = new Carrera();
+        // carrera1.name = "Ingenieria de Software";
+        // carrera1.duration = 5;
+        // carrera1.isCursed = true;
+
+        // persona1.carrera = carrera1;
+
+        // System.out.println(persona1.getFullName());
+        // System.out.println(persona1.greet("Muke"));
+
+        // System.out.println(persona1.carrera.getCarrera());
+
+        // Persona persona2 = new Persona("Mono", "Toledo", 26, "Ingenieria de Software", 5, true);
+        
+        // System.out.println(persona2.getCareer());
+
+        // ENCAPSULAMIENTO
+
+        // Animal animal = new Animal("Mono", "Blanco", 5);
+        // System.out.println(animal.getEdad());
+
+        // animal.setEdad(7);
+
+        // System.out.println(animal.getEdad());
+
+        Animal animal = new Animal("Generico", "Negro", 6);
+        Perro cholo = new Perro("Cholo", "Blanco", 8);
+        Gato gatica = new Gato("Gatica", "Gris", 1);
+
+        System.out.println(animal.hacerSonido());
+        System.out.println(cholo.hacerSonido());
+        System.out.println(gatica.hacerSonido());
     }
 }
