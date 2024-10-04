@@ -4,14 +4,20 @@ public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println("Hello, World!");
 
+        // ***************
         // VARIABLES
+        // ***************
+
         // int num = 10;
         // double pi = 3.14;
         // boolean isTrue = true;
         // char letter = 'a';
         // String chain = "Hello, World!";
 
+        // ***************
         // CONDICIONALES
+        // ***************
+
         // if(num > 5){
         //     System.out.println("The number is greater than 5");
         // } else {
@@ -44,7 +50,10 @@ public class App {
 
         // scanner.close();
 
+        // ***************
         // BUCLES
+        // ***************
+
         // for(int i = 0; i <= 3; i++){
         //     for(int j = 1; j < 3; j++){
         //         System.out.print(i);
@@ -60,7 +69,10 @@ public class App {
         //     num--;
         // }
 
+        // ***************
         // ARRAYS
+        // ***************
+
         // int[] numbers = new int[5];
         // numbers[0] = 10;
         // numbers[1] = 20;
@@ -74,7 +86,10 @@ public class App {
         //     System.out.println(numbers[i]);
         // }
 
+        // ***************
         // CLASES
+        // ***************
+
         // Persona persona1 = new Persona();
         // persona1.name = "Mono";
         // persona1.surname = "Toledo";
@@ -96,7 +111,9 @@ public class App {
         
         // System.out.println(persona2.getCareer());
 
+        // ***************
         // ENCAPSULAMIENTO
+        // ***************
 
         // Animal animal = new Animal("Mono", "Blanco", 5);
         // System.out.println(animal.getEdad());
@@ -105,12 +122,47 @@ public class App {
 
         // System.out.println(animal.getEdad());
 
-        Animal animal = new Animal("Generico", "Negro", 6);
-        Perro cholo = new Perro("Cholo", "Blanco", 8);
-        Gato gatica = new Gato("Gatica", "Gris", 1);
+        // ***************
+        // STATIC
+        // ***************
 
-        System.out.println(animal.hacerSonido());
-        System.out.println(cholo.hacerSonido());
-        System.out.println(gatica.hacerSonido());
+        // Animal animal = new Animal("Generico", "Negro", 6);
+        // System.out.println("Cantidad de animales creados: " + Animal.getCantidadAnimales());
+        // Perro cholo = new Perro("Cholo", "Blanco", 8);
+        // System.out.println("Cantidad de animales creados: " + Animal.getCantidadAnimales());
+        // Gato gatica = new Gato("Gatica", "Gris", 1);
+        // System.out.println("Cantidad de animales creados: " + Animal.getCantidadAnimales());
+
+        // System.out.println(animal.hacerSonido());
+        // System.out.println(cholo.hacerSonido());
+        // System.out.println(gatica.hacerSonido());
+
+        // ***************
+        // ABSTRACT
+        // ***************
+
+        // Circulo circulo = new Circulo(10);
+        // Rectangulo rectangulo = new Rectangulo(3, 5);
+
+        // circulo.imprimirInformacion();
+        // System.out.println("El area de un circulo es: " + circulo.area());
+        // rectangulo.imprimirInformacion();
+        // System.out.println("El area de un rectangulo es: " + rectangulo.area());
+
+
+        // ***************
+        // INTERFACES
+        // ***************
+
+        Tiburon tiburon = new Tiburon("tiburoncin", "azul");
+        Delfin delfin = new Delfin("delfincito", "blanco");
+
+        tiburon.nadar();
+        tiburon.comunicarse();
+        tiburon.alimentarse();
+        delfin.nadar();
+        delfin.comunicarse();
+        delfin.alimentarse();
+
     }
 }
