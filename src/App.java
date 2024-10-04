@@ -154,15 +154,36 @@ public class App {
         // INTERFACES
         // ***************
 
-        Tiburon tiburon = new Tiburon("tiburoncin", "azul");
-        Delfin delfin = new Delfin("delfincito", "blanco");
+        // Tiburon tiburon = new Tiburon("tiburoncin", "azul");
+        // Delfin delfin = new Delfin("delfincito", "blanco");
 
-        tiburon.nadar();
-        tiburon.comunicarse();
-        tiburon.alimentarse();
-        delfin.nadar();
-        delfin.comunicarse();
-        delfin.alimentarse();
+        // tiburon.nadar();
+        // tiburon.comunicarse();
+        // tiburon.alimentarse();
+        // delfin.nadar();
+        // delfin.comunicarse();
+        // delfin.alimentarse();
+
+        // ***************
+        // TRY / CATCH
+        // ***************
+        
+        // try {
+        //     int[] numeros = {1, 2, 3, 4, 5};
+        //     System.out.println(numeros[3]);
+        //     System.out.println("Todo ha ido bien");
+        // } catch (Exception e) {
+        //     e.printStackTrace();
+        //     System.out.println("Ha habido un error");
+        // }
+
+        // ***************
+        // EXCEPTIONS
+        // ***************
+        
+        Calculadora calculadora = new Calculadora();
+
+        System.out.println(calculadora.dividir(10, 0));
 
     }
 }
