@@ -1,5 +1,8 @@
 // import java.util.Scanner;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println("Hello, World!");
@@ -181,9 +184,45 @@ public class App {
         // EXCEPTIONS
         // ***************
         
-        Calculadora calculadora = new Calculadora();
+        // Calculadora calculadora = new Calculadora();
 
-        System.out.println(calculadora.dividir(10, 0));
+        // System.out.println(calculadora.dividir(10, 5));
+
+
+        // ***************
+        // HASHSET
+        // ***************
+
+         System.out.println("Bienvenido a la fiesta de los superheroes");
+
+        Set<String> superHeroes = new HashSet<>();
+
+        superHeroes.add("Spiderman");
+        superHeroes.add("Hulk");
+        superHeroes.add("Iron Man");
+        superHeroes.add("Thor");
+        superHeroes.add("Capitan America");
+
+        if(superHeroes.contains("Spiderman")){
+            System.out.println("Spíderman está en la fiesta");
+        }
+
+        superHeroes.remove("Iron Man");
+
+        if(!superHeroes.contains("Iron Man")){
+
+            System.out.println("Iron Man se fue de la fiesta");
+        }
+
+        if(superHeroes.isEmpty()){
+            System.out.println("La fiesta no tiene superHeroes");
+        } else {
+            System.out.println("La fiesta tiene " + superHeroes.size() + " superHeroes");
+        }
+
+        for (String superHeroe : superHeroes) {
+            System.out.println(superHeroe);
+        }
 
     }
 }
